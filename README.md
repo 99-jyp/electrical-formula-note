@@ -25,3 +25,8 @@ npx tauri icon <1024x1024.png>   # 최초 1회 아이콘 생성
 npm run tauri:dev    # 데스크톱 (Rust 필요)
 npm run tauri:build
 ```
+
+## GitHub Pages 배포
+저장소 관리자가 **Settings → Pages → Build and deployment → Source**에서
+**GitHub Actions**를 선택해야 합니다. 설정 후 실패한 배포 워크플로를 다시 실행하거나
+`main`에 변경 사항을 푸시하세요. Pages가 활성화되지 않으면 배포 단계에서 404 오류가 발생합니다.
