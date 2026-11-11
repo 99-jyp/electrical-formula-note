@@ -1,0 +1,18 @@
+[package]
+name = "electrical-formula-note"
+version = "0.1.0"
+description = "전기(산업)기사 공식 노트"
+edition = "2021"
+
+[lib]
+name = "electrical_formula_note_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-sql = { version = "2", features = ["sqlite"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
